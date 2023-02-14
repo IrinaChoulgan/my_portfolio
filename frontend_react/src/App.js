@@ -3,9 +3,11 @@ import React from 'react';
 import { About, Footer, Header, Skills, Testimonial, Work } from './container';
 import { Navbar } from './components';
 
+import s from './App.module.css';
+
 const App = () => {
   return (
-    <div className="app">
+    <div className={s.app}>
       <Navbar />
       <Header />
       <About />
