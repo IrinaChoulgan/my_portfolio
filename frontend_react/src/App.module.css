@@ -77,7 +77,7 @@
   }
 }
 
-span .head-text {
+.head-text span {
   color: var(--secondary-color);
 }
 
