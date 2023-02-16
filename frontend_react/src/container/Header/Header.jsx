@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { AppWrapp } from '../../wrapper';
 import { images } from '../../constants';
 import style from './Header.module.css';
 import s from '../../App.module.css';
@@ -18,7 +19,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div id={style.home} className={`${style.app__header} ${s.app__flex}`}>
+    <div className={`${style.app__header} ${s.app__flex}`}>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -68,4 +69,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppWrapp(Header, 'home');

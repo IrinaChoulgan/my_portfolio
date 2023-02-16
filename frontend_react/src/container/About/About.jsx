@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+import { AppWrapp } from '../../wrapper';
 import style from './About.module.css';
 import s from '../../App.module.css';
 
@@ -46,4 +47,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrapp(About, 'about');
