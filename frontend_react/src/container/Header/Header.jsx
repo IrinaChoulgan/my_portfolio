@@ -59,7 +59,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className={style.app__header_circles}
       >
-        {[images.javascript, images.react, images.git].map((circle, index) => (
+        {[images.js, images.react, images.git].map((circle, index) => (
           <div className={`${style.circle_cmp} ${s.app__flex}`} key={`circle-${index}`}>
             <img className={style.circle_img} src={circle} alt="circle" />
           </div>

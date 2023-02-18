@@ -12,7 +12,7 @@ const AppWrapp = (Component, idName, classNames) =>
           <Component />
 
           <div className={s.copyright}>
-            <p className={`${s.p_text} ${s.copyright_text}`}>@2020 IRINA</p>
+            <p className={`${s.p_text} ${s.copyright_text}`}>@2022 IRINA</p>
             <p className={`${s.p_text} ${s.copyright_text}`}>All rights reserved</p>
           </div>
         </div>

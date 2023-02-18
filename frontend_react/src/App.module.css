@@ -32,12 +32,6 @@
   padding: 4rem 2rem;
 }
 
-@media screen and (max-width: 450px) {
-  .app__wrapper {
-    padding: 4rem 1rem 2rem;
-  }
-}
-
 .copyright {
   width: 100%;
   padding: 2rem 0 0;
@@ -59,25 +53,9 @@
   text-align: center;
   color: var(--black-color);
   text-transform: capitalize;
-
-  /* span {
-    color: var(--secondary-color);
-  } */
 }
 .head_text span {
   color: var(--secondary-color);
-}
-
-@media screen and (min-width: 2000px) {
-  .head_text {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .head_text {
-    font-size: 2rem;
-  }
 }
 
 .p_text {
@@ -87,29 +65,11 @@
   line-height: 1.5;
 }
 
-@media screen and (min-width: 2000px) {
-  .p_text {
-    font-size: 1.75rem;
-  }
-}
-
 .bold_text {
   font-size: 1rem;
   font-weight: 800;
   color: var(--black-color);
   text-align: left;
-}
-
-@media screen and (min-width: 2000px) {
-  .bold_text {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .bold_text {
-    font-size: 0.9rem;
-  }
 }
 
 .app__social {
@@ -119,48 +79,6 @@
   flex-direction: column;
 
   padding: 1rem;
-
-  /* div {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-    margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: all 0.3s ease-in-out;
-
-    svg {
-      width: 15px;
-      height: 15px;
-      color: var(--gray-color);
-    }
-
-    &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
-
-      svg {
-        color: var(--white-color);
-      }
-    }
-
-    @media screen and (min-width: 2000px) {
-      width: 70px;
-      height: 70px;
-
-      margin: 0.5rem 0;
-
-      svg {
-        width: 30px;
-        height: 30px;
-      }
-    }
-  } */
 }
 
 .app__social_wrap {
@@ -207,14 +125,35 @@
 
   transition: background-color 0.2s ease-in-out;
 }
+.app__navigation_dot:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 450px) {
+  .bold_text {
+    font-size: 0.9rem;
+  }
+  .app__wrapper {
+    padding: 4rem 1rem 2rem;
+  }
+  .head_text {
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 2000px) {
   .app__navigation_dot {
     width: 20px;
     height: 20px;
   }
-}
-.app__navigation_dot:hover {
-  background-color: var(--secondary-color);
+  .bold_text {
+    font-size: 2rem;
+  }
+  .head_text {
+    font-size: 4rem;
+  }
+  .p_text {
+    font-size: 1.75rem;
+  }
 }
 
 @media screen and (max-width: 500px) {

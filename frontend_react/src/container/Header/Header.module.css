@@ -21,21 +21,6 @@
   flex-direction: row;
   padding: 6rem 2rem 0;
 }
-@media screen and (min-width: 2000px) {
-  .app__header {
-    padding-top: 8rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .app__header {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 450px) {
-  .app__header {
-    padding: 6rem 1rem 2rem;
-  }
-}
 
 .app__header_info {
   flex: 0.65;
@@ -45,13 +30,6 @@
   align-items: flex-start;
   height: 100%;
 }
-@media screen and (max-width: 2000px) {
-  .app__header_info {
-    width: 100%;
-    margin-right: 0rem;
-  }
-}
-
 .app__header_badge {
   width: 100%;
   display: flex;
@@ -79,38 +57,6 @@
 }
 .badge_emoji {
   font-size: 2.5rem;
-}
-@media screen and (min-width: 2000px) {
-  .badge_emoji {
-    font-size: 5rem;
-  }
-  .app__header_circles div:nth-child(1) {
-    width: 400px;
-    height: 400px;
-  }
-  .app__header_circles div:nth-child(2) {
-    width: 170px;
-    height: 170px;
-  }
-  .app__header_circles div:nth-child(3) {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .badge_emoji {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .app__header_circles {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 0;
-  }
-  .app__header_circles div {
-    margin: 1rem;
-  }
 }
 
 .app__header_circles {
@@ -172,4 +118,54 @@
   z-index: 0;
   width: 100%;
   height: 90%;
+}
+
+@media screen and (max-width: 2000px) {
+  .app__header_info {
+    width: 100%;
+    margin-right: 0rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .app__header {
+    padding-top: 8rem;
+  }
+  .badge_emoji {
+    font-size: 5rem;
+  }
+  .app__header_circles div:nth-child(1) {
+    width: 400px;
+    height: 400px;
+  }
+  .app__header_circles div:nth-child(2) {
+    width: 170px;
+    height: 170px;
+  }
+  .app__header_circles div:nth-child(3) {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .app__header {
+    flex-direction: column;
+  }
+  .badge_emoji {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .app__header_circles {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+  .app__header_circles div {
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__header {
+    padding: 6rem 1rem 2rem;
+  }
 }
