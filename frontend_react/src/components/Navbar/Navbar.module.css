@@ -11,12 +11,6 @@
   z-index: 2;
 }
 
-.app__flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .app__navbar_logo {
   display: flex;
   justify-content: flex-start;
@@ -156,9 +150,6 @@
   .app__navbar_img {
     width: 180px;
     height: 100px;
-  }
-  .p_text {
-    font-size: 1.75rem;
   }
 }
 
