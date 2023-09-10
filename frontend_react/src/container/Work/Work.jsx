@@ -41,7 +41,7 @@ const Work = () => {
         My Creative <span>Portfolio</span> section
       </h2>
       <div className={style.app__work_filter}>
-        {['UI/UX', 'Web App', 'React JS', 'All'].map((item, index) => (
+        {['HTML/CSS', 'Web App', 'React JS', 'Next JS', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -58,10 +58,10 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className={style.app__work_portfolio}
       >
-        {filterWork.map((work, index) => (
+        {filterWork?.map((work, index) => (
           <div className={`${style.app__work_item} ${s.app__flex}`} key={index}>
             <div className={`${style.app__work_img} ${s.app__flex}`}>
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <img src={urlFor(work.imgUrl).url()} alt={work.name} />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}

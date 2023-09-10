@@ -33,7 +33,7 @@ const About = () => {
             className={style.app__profile_item}
             key={about.title + index}
           >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
+            <img src={urlFor(about.imgUrl).url()} alt={about.title} />
             <h2 className={s.bold_text} style={{ marginTop: 20 }}>
               {about.title}
             </h2>
